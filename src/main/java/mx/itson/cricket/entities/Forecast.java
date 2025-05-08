@@ -4,6 +4,7 @@
  */
 package mx.itson.cricket.entities;
 
+import com.google.gson.annotations.SerializedName;
 import java.util.Date;
 import mx.itson.cricket.enums.WeatherStatus;
 
@@ -15,8 +16,9 @@ public class Forecast {
     
     private Date day;
     private WeatherStatus status;
-    //@SerializedName("max_temperature")
+    @SerializedName("max_temperature")
     private int maxTemperature;
+    @SerializedName("min_temperature")
     private int minTemperature;
     
 }
